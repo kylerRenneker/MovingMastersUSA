@@ -1,0 +1,101 @@
+html, body, * {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 76%;
+    line-height: 1.15;
+}
+
+body {
+    background-color: #d0e8f4;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+section {
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.6rem;
+}
+
+.error {
+    color: royalblue;
+}
+
+.page-header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.16);
+    justify-content: space-between;
+}
+
+.logo-hd {
+    margin: 0 10px;
+    color: #df5435;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.main-content {
+    text-align: center;
+    height: 100vh;
+    
+}
+
+.text-input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 2px 0 #00000042;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.head-free {
+    font-weight: 700;
+    color: #df5435;
+    margin-top: 20px;
+}
+
+.primary-hd, .head-free {
+    margin-bottom: 40px;
+}
+
+.btn {
+    width: 100%;
+    padding: 5px;
+    background-color: #df5435;
+    border-radius: 30px;
+    margin: 20px 0;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.quote-form {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header-icon {
+    width: 80px;
+    padding: 0 10px;
+}

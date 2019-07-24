@@ -1,0 +1,15 @@
+{
+    "name": "MovingMastersUSA",
+    "alias": "movingmastersusa.com",
+    "version": 2,
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/size",
+            "dest": "/index.html"
+        }
+    ]
+}

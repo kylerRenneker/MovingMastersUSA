@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Moving Masters</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <!-- <img src="" alt="movingmasters logo"> -->
+        <a class="logo-hd" href="/index.html">Moving Masters USA</a>
+        <img class="header-icon" src="./moving-truck.svg" alt="moving truck image">
+    </header>
+    <main class="main-content container">
+        <section class="row free-quote">
+            <h3 class="col-12 head-free">Get Your FREE Quote PLUS Your FREE Estimate</h3>
+            <h3 class="col-12 head-zip">Enter ZIP From, ZIP To -- View Prices</h3>
+        </section>
+        <section class="page-content">
+            <form class="quote-form">
+                <input class='text-input zip-from' required type='text' pattern='\d*' inputMode='numeric' maxLength='5'
+                    autoComplete='postal-code' id='signup__zipcode' placeholder='FROM - Zip code ie 22410'
+                    name='zipFrom'>
+                </input>
+                <input class='text-input zip-to' required type='text' pattern='\d*' inputMode='numeric' maxLength='5'
+                    autoComplete='postal-code' id='signup__zipcode' placeholder='TO - Zip code ie 22410' name='zipTo'>
+                </input>
+                <select id="moveSize" class="text-input">
+                    <option value="1">1 Bedroom</option>
+                    <option value="2">2 Bedroom</option>
+                    <option value="3">3 Bedroom</option>
+                    <option value="4">4 Bedroom</option>
+                    <option value="5">5 Bedroom +</option>
+                    <option value="office">Office</option>
+                </select>
+                <input class='text-input name' required type='text' placeholder="Name" id="form-name" name="name">
+                </input>
+                <input class='text-input email' required type='email' id='form-email' placeholder='Email'
+                    name='email'></input>
+                <input class='text-input phone' required type='tel' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="Phone ie 123-456-7890" name='phone'>
+                </input>
+                <button class="btn btn-getMoving" type="submit">Get Moving!</button>
+            </form>
+            <div class="moving-img-container">
+                <img src="">
+            </div>
+        </section>
+
+    </main>
+    <script type="module" src="./main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>
