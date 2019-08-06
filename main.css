@@ -116,6 +116,7 @@ h2{
     border-radius: 5px;
     font-size: 1.4rem;
     box-shadow: 2px 4px 10px #d8d7d7;
+    display: none;
 }
 
 /* .ui-datepicker-next{
