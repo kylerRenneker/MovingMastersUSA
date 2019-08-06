@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Moving Masters</title>
+    <title>Moving Masters USA</title>
 </head>
 
 <body>
     <header class="page-header">
-        <!-- <img src="" alt="movingmasters logo"> -->
         <a class="logo-hd" href="/index.html">Moving Masters USA</a>
         <img class="header-icon" src="./moving-truck.svg" alt="moving truck image">
     </header>
@@ -23,15 +22,20 @@
             <h3 class="col-12 head-zip">Enter ZIP From, ZIP To -- View Prices</h3>
         </section>
         <section class="page-content">
-            <form class="quote-form">
+            <form action="https://submit-form.com/FRX7DD8IjcxTXDq72tYdK" class="quote-form">
+                <input type="hidden" name="_feedback.success.title" value="Thank You! A MovingMasterUSA representative will contact you with 
+                the TOP estimates at the LOWEST prices!" />
                 <input class='text-input zip-from' required type='text' pattern='\d*' inputMode='numeric' maxLength='5'
                     autoComplete='postal-code' id='signup__zipcode' placeholder='FROM - Zip code ie 22410'
                     name='zipFrom'>
-                </input>
+
                 <input class='text-input zip-to' required type='text' pattern='\d*' inputMode='numeric' maxLength='5'
                     autoComplete='postal-code' id='signup__zipcode' placeholder='TO - Zip code ie 22410' name='zipTo'>
-                </input>
-                <select id="moveSize" class="text-input">
+
+                <input type="text" class="text-input" id="datepicker" placeholder="Desired Moving Date"
+                    name="movingDate">
+
+                <select id="moveSize" class="text-input" name="rooms">
                     <option value="1">1 Bedroom</option>
                     <option value="2">2 Bedroom</option>
                     <option value="3">3 Bedroom</option>
@@ -40,22 +44,23 @@
                     <option value="office">Office</option>
                 </select>
                 <input class='text-input name' required type='text' placeholder="Name" id="form-name" name="name">
-                </input>
-                <input class='text-input email' required type='email' id='form-email' placeholder='Email'
-                    name='email'></input>
-                <input class='text-input phone' required type='tel' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    placeholder="Phone ie 123-456-7890" name='phone'>
-                </input>
+
+                <input class='text-input email' required type='email' id='form-email' placeholder='Email' name='email'>
+                <input class='text-input phone' required type='tel' placeholder="Phone ie 123-456-7890" name='phone'>
+
                 <button class="btn btn-getMoving" type="submit">Get Moving!</button>
             </form>
             <div class="moving-img-container">
-                <img src="">
+                <img class="moving-truck" src="./moving-truck-svg.svg" alt="moving truck background">
             </div>
         </section>
 
     </main>
-    <script type="module" src="./main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 </body>
 
 </html>
